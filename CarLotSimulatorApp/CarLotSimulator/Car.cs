@@ -18,6 +18,9 @@ namespace CarLotSimulator
         public Car()
         {
             CarLot.numberOfCars++;
+            // ClassName.StaticMember
+            Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}");
+            // this would print in console everytime a car is added to the lot
         }
 
         public Car(int year, string make, string model, string engineNoise, string honkNoise, bool isDriveable)
@@ -28,6 +31,8 @@ namespace CarLotSimulator
             EngineNoise = engineNoise;
             HonkNoise = honkNoise;
             IsDriveable = isDriveable;
+            CarLot.numberOfCars++;
+            Console.WriteLine($"Cars in lot: {CarLot.numberOfCars}");
         }
 
         public int Year { get; set; }

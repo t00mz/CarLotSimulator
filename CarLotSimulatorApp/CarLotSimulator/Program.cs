@@ -60,14 +60,14 @@ namespace CarLotSimulator
             lot.Cars.Add(honda);
             lot.Cars.Add(benz);
 
-            Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}");
+           // Console.WriteLine($"Number of cars in lot: {CarLot.numberOfCars}");
 
             foreach(var car in lot.Cars)
             {
                 Console.WriteLine($"Year: {car.Year}, Make: {car.Make}, Model: {car.Model}.");
             }
 
-
+            Console.WriteLine($"Final number of cars in lot: {CarLot.numberOfCars}");
 
             //*************BONUS*************//
 

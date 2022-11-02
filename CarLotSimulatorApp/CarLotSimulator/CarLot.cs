@@ -26,11 +26,9 @@ namespace CarLotSimulator
         {
         }
 
-        public static int numberOfCars = 1;
-
-        // numberOfCars = 1 bc you're adjusting for 0 based indexing
-
         public List<Car> Cars = new List<Car>();
+
+        public static int numberOfCars = 0;
 
 
     }
